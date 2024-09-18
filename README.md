@@ -32,7 +32,7 @@ The primary goal of this project is to demonstrate how to build a scalable, real
 * Visualize trends with Kibana dashboards.
 
 
-## Project Structure
+
 
 ## Project Structure
 
@@ -51,7 +51,7 @@ The primary goal of this project is to demonstrate how to build a scalable, real
 ├── schemas                    # Avro schemas for Kafka topics.
 └── README.md                  # You're here!
 
-
+```
 
 ## Technologies Used
 

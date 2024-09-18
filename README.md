@@ -15,17 +15,17 @@ This project is built to simulate real-time customer review ingestion, processin
 
 The primary goal of this project is to demonstrate how to build a scalable, real-time data processing pipeline that can be used in scenarios such as live sentiment analysis, customer feedback monitoring, and more.
 
-### [Setting up the stack](./1-setup/README.md)
+### [1-Setting up the stack](./1-setup/README.md)
 
-### [Configuration and Docker Files](./2-config-docker/README.md)
+### [2-Configuration and Docker Files](./2-config-docker/README.md)
 
-### [Streaming Data with Sockets](./3-sockets/README.md)
+### [3-Streaming Data with Sockets](./3-sockets/README.md)
 
-### [Streaming Data into Kafka with Pyspark](./4-kafka/README.md)
+### [4-Streaming Data into Kafka with Pyspark](./4-kafka/README.md)
 
-### [Streaming Data to Elasticsearch](./5-elasticsearch/README.md)
+### [5-Streaming Data to Elasticsearch](./5-elasticsearch/README.md)
 
-### [Querying and Visualization](./6-querying-vis/README.md)
+### [6-Querying and Visualization](./6-querying-vis/README.md)
 
 ## Architecture Overview
 

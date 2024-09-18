@@ -34,7 +34,10 @@ The primary goal of this project is to demonstrate how to build a scalable, real
 
 ## Project Structure
 
-/project-root
+## Project Structure
+
+```plaintext
+
 ├── config                     # Configuration files for Kafka, OpenAI, etc.
 │   └── config.py
 ├── datasets                   # Sample datasets, including the Yelp reviews dataset.
@@ -47,6 +50,7 @@ The primary goal of this project is to demonstrate how to build a scalable, real
 │   ├── openai-sentiment        # Scripts for sentiment analysis using OpenAI.
 ├── schemas                    # Avro schemas for Kafka topics.
 └── README.md                  # You're here!
+
 
 
 ## Technologies Used
@@ -69,34 +73,34 @@ The primary goal of this project is to demonstrate how to build a scalable, real
 
 1. Clone the repository:
 ```bash
-    git clone https://github.com/your-username/real-time-streaming-pipeline.git
+    git clone https://github.com/miladtajvidi/real-time-streaming-pipeline.git
     cd real-time-streaming-pipeline
 ```
-2. Set up your environment:
+2. Set up your environment:<br>
 Update the config/config.py file with your API keys and connection details:
 * Kafka cluster details
 * Schema Registry credentials
 * OpenAI API key
 * Elasticsearch cluster details
 
-3. Build and run the Docker containers:
+3. Build and run the Docker containers:<br>
 Use Docker Compose to start up the containers for Kafka, Spark, and Elasticsearch.
 ```bash
    docker-compose up --build
 ```
-4. Start the socket producer:
+4. Start the socket producer:<br>
 Start the script that simulates live customer reviews being streamed over a socket.
 ```bash
     python3 src/kafka-producer/streaming-socket.py
 ```
-5. Start the Spark streaming job:
+5. Start the Spark streaming job:<br>
 Run the Spark job to consume data from the socket, perform sentiment analysis, and send it to Kafka.
 ```bash
     docker exec -it spark-master spark-submit --master spark://spark-master:7077 jobs/spark-streaming.py
 
 ```
 
-6. Query and visualize in Elasticsearch:
+6. Query and visualize in Elasticsearch:<br>
 After the data is processed and indexed in Elasticsearch, use Kibana to visualize the sentiment trends.
 
 

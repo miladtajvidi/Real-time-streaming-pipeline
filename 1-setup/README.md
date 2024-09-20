@@ -39,6 +39,17 @@ With your cluster up and the API keys generated, you can now connect your applic
 
 ### Spark
 
+We’ll use Spark Streaming to consume data from the socket, process it, send it to OpenAI for sentiment analysis, then stream it to Kafka.
+
 ### OpenAI
 
+Integrate OpenAI’s API for sentiment analysis. Ensure you have the necessary API keys and understand the rate limits.
+
 ### Elasticsearch
+
+We need to set up an Elasticsearch cluster. This will be our data sink, where processed data will be stored and indexed.
+1- Create a new deployment on Elastic cloud(Elasticsearch Service)
+2- Configure the deployment
+3- After your deployment is created, you’ll be provided with details like the Elasticsearch endpoint, Kibana endpoint, and generated passwords.
+
+* Additional note:<br> Secure Your Cluster: Navigate to the Security section of your deployment. Here, you can set up additional users, roles, and API keys. It's recommended to create specific users/roles for different tasks rather than using the default elastic user for everything.

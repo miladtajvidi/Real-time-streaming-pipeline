@@ -19,20 +19,20 @@
 
 You may be asked to set a schema, we’ll be creating the value schema in the schema registry to ensure data consistency and compatibility as schemas evolve.
 ```json
-        {
-    "type": "record",
-    "name": "customers_reviews_schema",
-    "namespace": "com.airscholar",
-    "doc": "Schema for customer reviews",
-    "fields": [
-        { "name": "review_id",  "type": "string" },
-        { "name": "user_id",  "type": "string" },
-        { "name": "business_id", "type": "string" },
-        { "name": "stars", "type": "float" },
-        { "name": "date", "type": "string" },
-        { "name": "text",  "type": "string" },
-        { "name": "feedback",  "type": "string" }
-    ]
+    {
+        "type": "record",
+        "name": "customers_reviews_schema",
+        "namespace": "com.airscholar",
+        "doc": "Schema for customer reviews",
+        "fields": [
+            { "name": "review_id",  "type": "string" },
+            { "name": "user_id",  "type": "string" },
+            { "name": "business_id", "type": "string" },
+            { "name": "stars", "type": "float" },
+            { "name": "date", "type": "string" },
+            { "name": "text",  "type": "string" },
+            { "name": "feedback",  "type": "string" }
+        ]
     }
 ```
 With your cluster up and the API keys generated, you can now connect your applications, producers, and consumers to your Kafka cluster using the provided broker endpoints ( cluster settings >> endpoints) and credentials (from the API Keys section)
